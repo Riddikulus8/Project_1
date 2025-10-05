@@ -61,7 +61,7 @@ public class Student {
         regexp = "^[0-9]{10}$",
         message = "Phone number must be exactly 10 digits"
     )
-    @Column(name = "phone", length = 10, unique = true, nullable = false)
+    @Column(name = "phone", length = 255, unique = true, nullable = false)
     private String phone;
 
     @CreationTimestamp
