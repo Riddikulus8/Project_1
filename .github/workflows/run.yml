@@ -24,6 +24,6 @@ jobs:
       run: |
         nohup java -jar target/*.jar &
         sleep 10
-        curl -I http://localhost:8080 || true
+        
 
       
