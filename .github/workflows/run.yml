@@ -17,4 +17,6 @@ jobs:
         cache: maven
     # Step 3: Build with Maven
     - name: Build with Maven
+      shell: cmd
       run: mvn -B clean package
+      
