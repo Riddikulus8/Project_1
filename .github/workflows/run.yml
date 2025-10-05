@@ -19,4 +19,11 @@ jobs:
     - name: Build with Maven
       shell: cmd
       run: mvn -B clean package
+        # Step 5: Start the Spring Boot app
+    - name: Start Spring Boot app
+      run: |
+        nohup java -jar target/*.jar &
+        sleep 10
+        curl -I http://localhost:8080 || true
+
       
